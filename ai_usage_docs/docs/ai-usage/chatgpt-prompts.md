@@ -39,6 +39,8 @@ These are selected messages I wrote to ChatGPT while working through the power g
 ## 3. Reviewing the updated interface
 
 ![Phase 2 — Interface and metrics](../../../iteration-screenshots/p2_screenshot1.png)
+![Phase 2 — Interface and metrics](../../../iteration-screenshots/p2_screenshot2.png)
+![Phase 2 — Interface and metrics](../../../iteration-screenshots/p2_screenshot3.png)
 
 > Take a look at the screenshots. Let me know how we can proceed next
 
