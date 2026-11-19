@@ -15,22 +15,31 @@ Built using Python, FastAPI, React, TypeScript, and Tailwind CSS.
 
 ## Setup
 
-**Requirements:** Python 3.11+ and Node.js 20.19+ or 22.12+
+**Requirements:** Python 3.11+ and either Node.js 20.x (20.19 or newer) or Node.js 22.12 or newer.
 
 ### Backend
 
-Open a terminal in the project directory:
+From the project root in Windows PowerShell:
 
 ```powershell
 cd backend
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[test]"
-.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload --reload-dir app
+```
+
+From the project root on macOS or Linux:
+
+```sh
+cd backend
+python3 -m venv .venv
+./.venv/bin/python -m pip install -e '.[test]'
+./.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload --reload-dir app
 ```
 
 ### Frontend
 
-Open another terminal:
+In a second terminal, start from the project root:
 
 ```bash
 cd frontend
@@ -38,7 +47,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser.
+Vite forwards `/api` requests to the backend on port 8000. Open [the local simulator](http://127.0.0.1:5173/).
 
 ## How to Use
 
@@ -63,14 +72,24 @@ During normal operation, G101 stays ON while CB101 opens at 49.55 Hz and reconne
 
 ## Tests
 
-From the `backend` directory:
+Run the tests from `backend` with the Python interpreter you used to install the test dependencies. The backend and frontend servers can be stopped.
 
-```bash
-python -m pytest
+- Windows PowerShell
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest
 ```
+
+- macOS or Linux
+
+```sh
+./.venv/bin/python -m pytest
+```
+
+From `frontend`, run `npm run build` to type-check and build the UI.
 
 ## AI Usage
 
 I used ChatGPT and Codex throughout development, mainly for planning, implementation, debugging, and reviewing simulation behaviour.
 
-I've documented the process and prompts in [AI_USAGE.md](AI_USAGE.md).
+I've documented the process and prompts in [AI_USAGE.md](ai_usage_docs/AI_USAGE.md).
