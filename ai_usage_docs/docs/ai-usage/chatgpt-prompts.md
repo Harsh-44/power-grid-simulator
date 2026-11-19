@@ -24,9 +24,9 @@ These are selected messages I wrote to ChatGPT while working through the power g
 
 ## 2. Reviewing the first implementation
 
-![Phase 1 — Initial simulator](iteration-screenshots/p1_screenshot1.png)
+![Phase 1 — Initial simulator](../../../iteration-screenshots/p1_screenshot1.png)
 
-![Phase 1 — Initial run results](iteration-screenshots/p1_screenshot2.png)
+![Phase 1 — Initial run results](../../../iteration-screenshots/p1_screenshot2.png)
 
 > The two screenshots i have attached show the results of the first iteration that codex has come up with.  
 > Going through it myself, yes, i can say that it is an okay starting point and the logic seems to be checking out.  
@@ -38,7 +38,7 @@ These are selected messages I wrote to ChatGPT while working through the power g
 
 ## 3. Reviewing the updated interface
 
-![Phase 2 — Interface and metrics](iteration-screenshots/p2_screenshot1.png)
+![Phase 2 — Interface and metrics](../../../iteration-screenshots/p2_screenshot1.png)
 
 > Take a look at the screenshots. Let me know how we can proceed next
 

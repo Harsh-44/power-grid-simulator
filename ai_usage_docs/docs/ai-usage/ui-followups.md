@@ -18,7 +18,7 @@ These are the exact prompts I used for some simple, but specific follow-ups to t
 
 ## UI-03 — Column sizing
 
-![UI follow-up 2 — Two-column layout](iteration-screenshots/ui_fix_prompt2.png)
+![UI follow-up 2 — Two-column layout](../../../iteration-screenshots/ui_fix_prompt2.png)
 
 > can you make the left column card reach the full heigh of the viewport like how the right column graph cards are reaching?
 
@@ -31,7 +31,7 @@ These are the exact prompts I used for some simple, but specific follow-ups to t
 
 ## UI-05 — Spacing and configuration placement
 
-![UI follow-up 4 — Playback button styling](iteration-screenshots/ui_fix_prompt4.png)
+![UI follow-up 4 — Playback button styling](../../../iteration-screenshots/ui_fix_prompt4.png)
 
 > a lot of empty space down there
 > distribute the existing content so that theres not so much empty space

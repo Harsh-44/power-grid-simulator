@@ -11,25 +11,26 @@ This is a reading guide, **not a verbatim export of ChatGPT or Codex responses**
 | UI iteration | Layout and interaction refinements were proposed. | I requested separate graph cards, details modal, left controls/right graphs, clearer hover feedback, balanced sizing, and a more intuitive configuration panel. | See [UI follow-up prompts](ui-followups.md); TODO: add before/after evidence. |
 | Generator states | Generator shutdown and manual state testing were proposed to demonstrate all four supplied rates. | TODO: record verification from actual tests, not just requested changes. | TODO: link test / commit. |
 
+**How to complete:** Add one or two sentences about an actual Codex response (e.g. files implemented, explanation it gave, a test failure it reported), then record whether you accepted, rejected, or revised it. Don't invent quotes or claim an AI suggestion was implemented until confirmed.
 
 ### Iteration screenshots
 
 **Phase 1 — Initial simulator**
 
-![Phase 1 screenshot 1](iteration-screenshots/p1_screenshot1.png)
+![Phase 1 screenshot 1](../../../iteration-screenshots/p1_screenshot1.png)
 
-![Phase 1 screenshot 2](iteration-screenshots/p1_screenshot2.png)
+![Phase 1 screenshot 2](../../../iteration-screenshots/p1_screenshot2.png)
 
 **Phase 2 — Metrics and playback**
 
-![Phase 2 screenshot 1](iteration-screenshots/p2_screenshot1.png)
+![Phase 2 screenshot 1](../../../iteration-screenshots/p2_screenshot1.png)
 
-![Phase 2 screenshot 2](iteration-screenshots/p2_screenshot2.png)
+![Phase 2 screenshot 2](../../../iteration-screenshots/p2_screenshot2.png)
 
-![Phase 2 screenshot 3](iteration-screenshots/p2_screenshot3.png)
+![Phase 2 screenshot 3](../../../iteration-screenshots/p2_screenshot3.png)
 
 **Phase 3 — Sensor faults**
 
-![Phase 3 screenshot 1](iteration-screenshots/p3_screenshot1.png)
+![Phase 3 screenshot 1](../../../iteration-screenshots/p3_screenshot1.png)
 
-![Phase 3 screenshot 2](iteration-screenshots/p3_screenshot2.png)
+![Phase 3 screenshot 2](../../../iteration-screenshots/p3_screenshot2.png)
