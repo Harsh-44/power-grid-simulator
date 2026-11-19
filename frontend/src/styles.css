@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    color-scheme: light;
+    font-family: var(--font-sans);
+  }
+
+  body:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  :is(button, select, input, summary):focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+}
+
+.transport-icon {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.transport-icon::before,
+.transport-icon::after {
+  position: absolute;
+  content: "";
+}
+
+.transport-play::before,
+.transport-forward::before,
+.transport-back::before {
+  top: 3px;
+  border-block: 5px solid transparent;
+}
+
+.transport-play::before,
+.transport-forward::before {
+  left: 4px;
+  border-left: 8px solid currentColor;
+}
+
+.transport-back::before {
+  right: 4px;
+  border-right: 8px solid currentColor;
+}
+
+.transport-back::after,
+.transport-forward::after {
+  top: 3px;
+  width: 2px;
+  height: 10px;
+  border-radius: 1px;
+  background: currentColor;
+}
+
+.transport-back::after { left: 2px; }
+.transport-forward::after { right: 2px; }
+
+.transport-pause::before {
+  inset: 3px 3px;
+  border-inline: 3px solid currentColor;
+}
+
+.transport-reset::before {
+  inset: 2px;
+  border: 1.6px solid currentColor;
+  border-left-color: transparent;
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+
+.transport-reset::after {
+  top: 2px;
+  left: 2px;
+  width: 5px;
+  height: 5px;
+  border-bottom: 1.6px solid currentColor;
+  border-left: 1.6px solid currentColor;
+}
+
+.playback-scrubber {
+  height: 28px;
+  appearance: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.playback-scrubber::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #2563eb var(--progress), #d9e2ef var(--progress));
+}
+
+.playback-scrubber::-webkit-slider-thumb {
+  width: 13px;
+  height: 13px;
+  margin-top: -4.5px;
+  appearance: none;
+  border: 2px solid #1d4ed8;
+  border-radius: 50%;
+  background: white;
+}
+
+.playback-scrubber::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: #d9e2ef;
+}
+
+.playback-scrubber::-moz-range-progress {
+  height: 4px;
+  border-radius: 999px;
+  background: #2563eb;
+}
+
+.playback-scrubber::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  border: 2px solid #1d4ed8;
+  border-radius: 50%;
+  background: white;
+}
+
+.chart-workspace .recharts-surface {
+  pointer-events: none;
+}
+
+.chart-workspace .recharts-surface:focus {
+  outline: none;
+}
+
+.chart-workspace .recharts-surface:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
+}
+
+@media (min-width: 64rem) and (min-height: 43.75rem) {
+  .dashboard {
+    height: 100dvh;
+  }
+
+  .chart-workspace {
+    flex: 1;
+  }
+
+  .dashboard-columns {
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .dashboard-sidebar > section {
+    flex: 1 0 auto;
+    align-content: center;
+  }
+
+  .chart-workspace {
+    grid-template-rows: minmax(0, 2.35fr) minmax(0, 1fr);
+  }
+
+  .chart-plot {
+    height: auto;
+    flex: 1;
+  }
+}
+

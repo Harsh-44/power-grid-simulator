@@ -1,0 +1,19 @@
+{
+  "duration_seconds": 120,
+  "time_step_seconds": 1,
+  "initial_frequency_hz": 50.00,
+  "initial_generator_state": "ON",
+  "initial_breaker_state": "CLOSED",
+  "nominal_frequency_hz": 50.00,
+  "lower_limit_hz": 49.50,
+  "upper_limit_hz": 50.50,
+  "frequency_rates_hz_per_second": {
+    "on_closed": -0.05,
+    "on_open": 0.12,
+    "off_closed": -0.15,
+    "off_open": 0.00
+  },
+  "breaker_open_threshold_hz": 49.55,
+  "breaker_close_threshold_hz": 50.00
+}
+
