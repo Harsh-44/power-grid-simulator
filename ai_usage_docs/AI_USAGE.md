@@ -6,6 +6,8 @@ I used **ChatGPT** to work through the task brief, preparing detailed and compre
 
 I started by asking for a basic working simulation loop rather than a complete polished application. I wanted the physics, controller, and UI kept separate, configurable parameters, reusable functions, and logging and sanity checks that would make the model easier to test.
 
+I tested each iteration by running different simulation scenarios, examining the frequency and component-state graphs, checking metrics and event logs against the specified physical rules, and investigating unexpected behaviour and my findings that arised from these tests guided the next iterations.
+
 ## How the project developed
 
 | Stage | What I focused on |
