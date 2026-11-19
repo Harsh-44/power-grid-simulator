@@ -11,6 +11,8 @@ These are the exact prompts I used for some simple, but specific follow-ups to t
 
 ## UI-02 — Two-column layout and control feedback
 
+![UI follow-up 2 — Two-column layout](../../../iteration-screenshots/ui_fix_prompt2.png)
+
 > can you put these elements to the left of the screen and the rest of the graph stuff to the right? this might make it easier to balance out the visuals of the simulator.
 > so all the details of the simulation run and simulation controls will be on the left, all the graphs will be on the right.
 > feel free to use icons where applicable
@@ -18,7 +20,6 @@ These are the exact prompts I used for some simple, but specific follow-ups to t
 
 ## UI-03 — Column sizing
 
-![UI follow-up 2 — Two-column layout](../../../iteration-screenshots/ui_fix_prompt2.png)
 
 > can you make the left column card reach the full heigh of the viewport like how the right column graph cards are reaching?
 
