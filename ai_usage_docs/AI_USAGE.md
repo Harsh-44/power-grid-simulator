@@ -18,9 +18,9 @@ I started by asking for a basic working simulation loop rather than a complete p
 | UI refinement | Prioritize the three required graphs, improve hierarchy, and keep more detailed information accessible without overwhelming the main view. |
 | Generator scenarios | Ask for a way to exercise all four generator/breaker rate combinations, without switching the generator off unnecessarily in normal operation. |
 
-![Initial simulator — Phase 1](docs/ai-usage/iteration-screenshots/p1_screenshot1.png)
+![Initial simulator — Phase 1](iteration-screenshots/p1_screenshot1.png)
 
-![Sensor fault testing — Phase 3](docs/ai-usage/iteration-screenshots/p3_screenshot1.png)
+![Sensor fault testing — Phase 3](iteration-screenshots/p3_screenshot1.png)
 
 ## What I learned
 
